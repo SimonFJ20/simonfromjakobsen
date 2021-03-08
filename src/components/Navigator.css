@@ -1,0 +1,31 @@
+.Navigator {
+    background-color: rgb(0, 119, 255);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+}
+
+.NavigatorLink {
+    display: inline-block;
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+.NavigatorLink.active {
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(230, 230, 230);
+}
+
+.NavigatorLink h2 {
+    margin: 0;
+}
+
+.NavigatorLink:hover {
+    background-color: rgb(67, 137, 216);
+    cursor: pointer;
+}

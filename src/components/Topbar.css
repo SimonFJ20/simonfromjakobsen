@@ -1,0 +1,10 @@
+.Topbar {
+    background-color: rgb(6, 76, 206);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.Topbar h1 {
+    margin: 0;
+}

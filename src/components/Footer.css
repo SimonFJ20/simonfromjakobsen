@@ -1,0 +1,43 @@
+.Footer {
+    padding-top: 50px;
+    background-color: rgb(20, 20, 20);
+    height: 30vh;
+}
+
+.Social {
+    margin-left: 35%;
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.SocialElement {
+    display: inline-block;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+.SocialElement img {
+    height: 40px;
+}
+
+.SocialElement a {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    color: rgb(230, 230, 230);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.SocialElement a:hover {
+    background-color: rgb(60, 60, 60);
+    cursor: pointer;
+}
+
+.SocialLink {
+    padding-top: 10px;
+    white-space: nowrap;
+}

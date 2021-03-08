@@ -1,0 +1,70 @@
+.HomeTitle {
+    background-image: url('https://i.ibb.co/b78Kg9B/chicago-skyline-photo-l.jpg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 30vh;
+}
+
+.Home h1 {
+    font-size: 40px;
+}
+
+.Home h2 {
+    font-weight: 500;
+}
+
+.Home h1.title {
+    font-size: 60px;
+    text-shadow: 1px 1px 1px black, 2px 2px 5px black;
+}
+
+.Home h3.underTitle {
+    font-size: 30px;
+    color: rgb(200, 200, 200);
+    text-shadow: 1px 1px 1px black, 2px 2px 5px black;
+}
+
+::selection {
+    background-color: rgb(150, 150, 150);
+    color: rgb(230, 230, 230);
+}
+
+hr {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#space {
+    height: 50vh;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 50%;
+    margin-left: 25%;
+}
+
+#services img {
+    width: 80%;
+    padding: 10%;
+    border-right: 1px solid rgb(230, 230, 230);
+}
+#services img:last-child {
+    border: 0;
+}
+
+#services h3 {
+    margin-top: 0;
+    width: 80%;
+    padding: 10%;
+    border-right: 1px solid rgb(230, 230, 230);
+}
+#services h3:last-child {
+    border: 0;
+}
+
+#services .last {
+    border: 0;
+}
