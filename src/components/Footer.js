@@ -27,10 +27,7 @@ export default function Footer(props) {
                 </Social>
                 <Social>
                     <div className="SocialLink">
-                        <a
-                            href="https://www.linkedin.com/in/simon-from-jakobsen-95b3a81ba/"
-                            target="blank"
-                        >
+                        <a href="https://www.linkedin.com/in/simon-from-jakobsen-95b3a81ba/" target="blank">
                             Simon From Jakobsen
                         </a>
                     </div>

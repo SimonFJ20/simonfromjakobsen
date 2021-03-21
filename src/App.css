@@ -4,11 +4,14 @@
     color: rgb(230, 230, 230);
     height: 100vh;
     overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
 
 .AppTop {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100vw - 1vw);
+    min-width: calc(100vw - 1ex);
 }
+
