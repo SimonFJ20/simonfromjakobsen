@@ -10,7 +10,7 @@ function NavigatorLink(props) {
         <div
             className={isActive()}
             onClick={() => {
-                props.setPage('/' + props.thisPage);
+                props.setPage(props.thisPage);
                 window.history.pushState({}, 'Simon From Jakobsen', props.thisPage);
             }}
         >
@@ -25,28 +25,28 @@ export default function Navigator(props) {
             <NavigatorLink
                 page={props.page}
                 setPage={props.setPage}
-                thisPage={'home'}
+                thisPage={'/home'}
             >
                 Forside
             </NavigatorLink>
             <NavigatorLink
                 page={props.page}
                 setPage={props.setPage}
-                thisPage={'projects'}
+                thisPage={'/projects'}
             >
                 Projekter
             </NavigatorLink>
             <NavigatorLink
                 page={props.page}
                 setPage={props.setPage}
-                thisPage={'cv'}
+                thisPage={'/cv'}
             >
                 CV
             </NavigatorLink>
             <NavigatorLink
                 page={props.page}
                 setPage={props.setPage}
-                thisPage={'contact'}
+                thisPage={'/contact'}
             >
                 Kontakt
             </NavigatorLink>
