@@ -3,15 +3,19 @@ import './Site.css';
 
 function GetSite(props) {
     switch (props.page) {
-        case 0:
+        case '/home':
             return <Home></Home>;
-        case 1:
+        case '/projects':
+            window.history.pushState({}, 'Simon From Jakobsen', '/projects')
             return <div>pdfsdfsdf</div>;
-        case 2:
+        case '/cv':
+            window.history.pushState({}, 'Simon From Jakobsen', '/cv')
             return <div>cfgdfgdfgdfd</div>;
-        case 3:
+        case '/contact':
+            window.history.pushState({}, 'Simon From Jakobsen', '/contact')
             return <div>kgdfgdfgdfgd</div>;
         default:
+            console.log(props.page)
             return (
                 <div>
                     <h1>404 ikke fundet</h1>

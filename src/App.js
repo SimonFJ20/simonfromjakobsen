@@ -6,8 +6,8 @@ import Site from './components/Site';
 import Topbar from './components/Topbar';
 
 export default function App() {
-    const [page, setPage] = useState(0);
-
+    const [page, setPage] = useState(window.location.pathname);
+    
     return (
         <div className="App">
             <div className="AppTop">
