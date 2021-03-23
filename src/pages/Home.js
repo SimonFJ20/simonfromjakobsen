@@ -7,7 +7,7 @@ import hardwareLogo from './assets/hardwareLogo.svg';
 
 //import backgroundImage from 'https://i.ibb.co/YD903Ys/c0.jpg';
 
-export default function Home() {
+export default function Home(props) {
     return (
         <div className="Home">
             <div className="HomeTitle">
@@ -43,6 +43,18 @@ export default function Home() {
                 <h3>Opsætning og håndtering af Webservere med Linux</h3>
                 <h3>Design og fremstilling af Hardwareløsninger</h3>
             </div>
+            <hr />
+            <h1>
+                Jeg søger Praktikplads
+            </h1>
+            <h2>
+                Jeg søger lige nu (siden 23-03-2021) praktikplads, som Datatekniker med speciale i programmering<br/>
+                Det gør jeg, fordi jeg lige nu er i gang med en EUX på Mercantec Gymnasium i Viborg, som Datatekniker.<br/>
+                Hvis du som firma søger en Datateknikerlærling med speciale i infrastruktur,<br/> så er du meget velkommen
+                til at kontakte mig. <br/>
+                Se <button className="HomeInlineLink" onClick={() => {props.setPage('contact')}}>Kontakt</button> siden, for mere information.
+            </h2>
+            <br/><br/>
         </div>
     );
 }

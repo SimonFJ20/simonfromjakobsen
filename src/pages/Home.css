@@ -68,3 +68,21 @@ hr {
 #services .last {
     border: 0;
 }
+
+
+.HomeInlineLink {
+    margin: inherit;
+    padding: inherit;
+    border: none;
+    background-color: inherit;
+    font: inherit;
+    color: rgb(0, 119, 255);
+    outline: none;
+    padding-right: 1px;
+}.HomeInlineLink:hover {
+    cursor: pointer;
+}.HomeInlineLink:active {
+    padding-right: 0;
+    padding-left: 1px;
+}
+

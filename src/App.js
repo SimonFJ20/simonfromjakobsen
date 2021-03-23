@@ -14,7 +14,7 @@ export default function App() {
                 <Topbar></Topbar>
                 <Navigator page={page} setPage={setPage}></Navigator>
             </div>
-            <Site page={page} />
+            <Site page={page} setPage={setPage} />
             <Footer />
         </div>
     );
