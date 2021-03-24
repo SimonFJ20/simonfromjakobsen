@@ -1,13 +1,14 @@
 import Home from '../pages/Home';
+import Projects from '../pages/Projects';
 import './Site.css';
 
 function GetSite(props) {
     switch (props.page) {
         case '/home':
-            return <Home></Home>;
+            return <Home page={props.page} setPage={props.setPage}></Home>;
         case '/projects':
             window.history.pushState({}, 'Simon From Jakobsen', '/projects')
-            return <div>pdfsdfsdf</div>;
+            return <Projects></Projects>;
         case '/cv':
             window.history.pushState({}, 'Simon From Jakobsen', '/cv')
             return <div>cfgdfgdfgdfd</div>;
@@ -27,7 +28,7 @@ function GetSite(props) {
 export default function Site(props) {
     return (
         <div className="Site">
-            <GetSite page={props.page}></GetSite>
+            <GetSite page={props.page} setPage={props.setPage}></GetSite>
         </div>
     );
 }

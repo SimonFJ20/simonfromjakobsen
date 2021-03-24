@@ -5,8 +5,6 @@ import videogameLogo from './assets/videogameLogo.svg';
 import serverLogo from './assets/serverLogo.svg';
 import hardwareLogo from './assets/hardwareLogo.svg';
 
-//import backgroundImage from 'https://i.ibb.co/YD903Ys/c0.jpg';
-
 export default function Home(props) {
     return (
         <div className="Home">
@@ -25,7 +23,8 @@ export default function Home(props) {
                 Jeg interesserer mig meget for IT og computere, specielt hardware- og softwareudvikling.<br/>
                 Jeg har udviklet både software og hardware i flere år, som en hobby i min fritid, <br/>
                 og jeg har derfor både erfaring og en god sans for faget.<br/>
-                Jeg er under uddannelse som EUX/Datatekniker med speciale i programmering.
+                Jeg er under uddannelse som EUX/Datatekniker med speciale i programmering,<br/>
+                og jeg søger derfor praktikplads, mere information nederst på siden.
             </h2>
             <hr />
             <h1>
@@ -52,7 +51,7 @@ export default function Home(props) {
                 Det gør jeg, fordi jeg lige nu er i gang med en EUX på Mercantec Gymnasium i Viborg, som Datatekniker.<br/>
                 Hvis du som firma søger en Datateknikerlærling med speciale i infrastruktur,<br/> så er du meget velkommen
                 til at kontakte mig. <br/>
-                Se <button className="HomeInlineLink" onClick={() => {props.setPage('contact')}}>Kontakt</button> siden, for mere information.
+                Se <button className="HomeInlineLink" onClick={() => {props.setPage('/contact')}}>Kontakt</button> siden, for mere information.
             </h2>
             <br/><br/>
         </div>
