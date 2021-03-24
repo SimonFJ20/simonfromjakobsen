@@ -7,6 +7,7 @@ import Topbar from './components/Topbar';
 
 export default function App() {
     const [page, setPage] = useState(window.location.pathname);
+    if(page === '/') setPage('/home');
     
     return (
         <div className="App">

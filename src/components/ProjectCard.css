@@ -1,7 +1,6 @@
 
 
 .ProjectCard {
-    background-color: rgb(60, 60, 60);
     margin: 30px;
     padding: 25px;
     border-radius: 10px;
@@ -10,8 +9,10 @@
 }.ProjectCard:hover {
     margin: 28px;
     padding: 27px;
-    background-color: rgb(65, 65, 65);
     cursor: pointer;
+    background-color: rgb(100, 100, 100) !important;
+}.ProjectCard:active {
+    background-color: rgb(120, 120, 120) !important;
 }
 
 .ProjectCard .cardImage {
