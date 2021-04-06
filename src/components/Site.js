@@ -8,7 +8,7 @@ function GetSite(props) {
             return <Home page={props.page} setPage={props.setPage}></Home>;
         case '/projects':
             window.history.pushState({}, 'Simon From Jakobsen', '/projects')
-            return <Projects></Projects>;
+            return <Projects page={props.page} setPage={props.setPage}></Projects>;
         case '/cv':
             window.history.pushState({}, 'Simon From Jakobsen', '/cv')
             return <div>cfgdfgdfgdfd</div>;
@@ -23,11 +23,12 @@ function GetSite(props) {
                 </div>
             );
     }
+    
 }
 
 export default function Site(props) {
     return (
-        <div className="Site">
+        <div className="Site" >
             <GetSite page={props.page} setPage={props.setPage}></GetSite>
         </div>
     );

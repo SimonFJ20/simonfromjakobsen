@@ -4,8 +4,19 @@ import linkedInLogo from '../assets/linkedin-logo512.png';
 import emailLogo from '../assets/mail-512.png';
 import phoneLogo from '../assets/phone-68-512.png';
 
+let githubLink = 'https://github.com/SimonFJ20';
+let linkedInLink = 'https://www.linkedin.com/in/simon-from-jakobsen-95b3a81ba/';
+
 function Social(props) {
-    return <div className="SocialElement">{props.children}</div>;
+
+    if('link' in props) return <a href={props.link} target="blank"><div className="SocialElement">
+        <img alt={props.alt} src={props.src}/>
+        <h2>{props.children}</h2>
+    </div></a>;
+    else return <div className="SocialElement">
+        <img alt={props.alt} src={props.src}/>
+        <h2>{props.children}</h2>
+    </div>;
 }
 
 export default function Footer(props) {
@@ -13,50 +24,12 @@ export default function Footer(props) {
         <div className="Footer">
             <h2>Simon From Jakobsen</h2>
             <div className="Social">
-                <Social>
-                    <img src={githubLogo} alt="Github"></img>
-                </Social>
-                <Social>
-                    <div className="SocialLink">
-                        <a href="https://github.com/SimonFJ20" target="blank">
-                            SimonFJ20
-                        </a>
-                    </div>
-                </Social>
-
-                <Social>
-                    <img src={linkedInLogo} alt="LinkedIn"></img>
-                </Social>
-                <Social>
-                    <div className="SocialLink">
-                        <a href="https://www.linkedin.com/in/simon-from-jakobsen-95b3a81ba/" target="blank">
-                            Simon From Jakobsen
-                        </a>
-                    </div>
-                </Social>
-
-                <Social>
-                    <img src={emailLogo} alt="LinkedIn"></img>
-                </Social>
-                <Social>
-                    <div className="SocialLink">
-                        <span className="notlink">
-                            simonfromjakobsen@gmail.com
-                        </span>
-                    </div>
-                </Social>
-
-                <Social>
-                    <img src={phoneLogo} alt="LinkedIn"></img>
-                </Social>
-                <Social>
-                    <div className="SocialLink">
-                        <span className="notlink">
-                            +45 6060 2456
-                        </span>
-                    </div>
-                </Social>
+                <Social src={githubLogo} alt={'github'} link={githubLink} >SimonFJ20</Social>
+                <Social src={linkedInLogo} alt={'linkedIn'} link={linkedInLink} >Simon From Jakobsen</Social>
+                <Social src={emailLogo} alt={'email'} >simonfromjakobsen@gmail.com</Social>
+                <Social src={phoneLogo} alt={'mobile phone number'} > +45 6060 2456</Social>
             </div>
+            <p className="madeby">Siden er lavet af Simon From Jakobsen</p>
         </div>
     );
 }

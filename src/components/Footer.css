@@ -5,53 +5,43 @@
 }
 
 .Social {
-    margin-left: 35%;
-    width: 30%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.Social a {
+    outline: none;
+    text-decoration: none;
 }
 
 .SocialElement {
-    display: inline-block;
-    border-bottom: 1px solid rgb(230, 230, 230);
-    border-top: 1px solid rgb(230, 230, 230);
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 80px;
+    place-items: center;
+    border: 2px solid rgb(30, 30, 30);
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 1px;
+    width: 600px;
+}.SocialElement:hover {
+    margin: 0;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.SocialElement h2 {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+    min-width: 300px;
 }
 
 .SocialElement img {
     height: 40px;
-}
-
-
-
-.SocialElement a {
-    font-size: 20px;
-    padding: 10px;
-    margin: 0;
-    margin-top: 7px;
-    margin-bottom: 12px;
-    color: rgb(230, 230, 230);
-    padding-left: 20px;
-    padding-right: 20px;
-    text-decoration: none;
-}
-.SocialElement a:hover {
-    background-color: rgb(60, 60, 60);
-    cursor: pointer;
-}
-
-.SocialLink {
-    padding-top: 10px;
     white-space: nowrap;
-}
-
-.SocialLink .notlink {
-    font-size: 20px;
-    padding: 10px;
-    margin: 0;
-    margin-top: 7px;
-    margin-bottom: 12px;
-    color: rgb(230, 230, 230);
-    padding-left: 20px;
-    padding-right: 20px;
-    text-decoration: none;
+    
 }

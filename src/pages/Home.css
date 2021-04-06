@@ -74,7 +74,7 @@ hr {
     margin: inherit;
     padding: inherit;
     border: none;
-    background-color: inherit;
+    background-color: rgb(40, 40, 40);
     font: inherit;
     color: rgb(0, 119, 255);
     outline: none;
@@ -84,5 +84,6 @@ hr {
 }.HomeInlineLink:active {
     padding-right: 0;
     padding-left: 1px;
+}.HomeInlineLink::selection {
+    background-color: rgb(150, 150, 150);
 }
-

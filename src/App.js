@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Navigator from './components/Navigator';
@@ -8,9 +8,24 @@ import Topbar from './components/Topbar';
 export default function App() {
     const [page, setPage] = useState(window.location.pathname);
     if(page === '/') setPage('/home');
+
     
+
+    const appDiv = useRef(null);
+    useEffect(() => {
+        appDiv.current.scrollTo(0, 0)
+    }, []);
+
+    const scroolToTopIfNotNull = () => {
+        try {
+            appDiv.current.scrollTo(0, 0)
+        } catch {
+            
+        }
+    }
+
     return (
-        <div className="App">
+        <div className="App" ref={appDiv} onLoad={scroolToTopIfNotNull()} >
             <div className="AppTop">
                 <Topbar></Topbar>
                 <Navigator page={page} setPage={setPage}></Navigator>
