@@ -60,3 +60,30 @@ hr {
     padding-left: 1px;
 }
 
+
+
+.ProjectCard {
+    margin: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    text-align: center;
+}.ProjectCard:hover {
+    margin: 20px;
+    padding: 35px;
+    cursor: pointer;
+    background-color: rgb(40, 40, 40) !important;
+}.ProjectCard:active {
+    background-color: rgb(60, 60, 60) !important;
+}
+
+.ProjectCard .cardImage {
+    width: 90%;
+    margin: 5%;
+    height: 100px;
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+

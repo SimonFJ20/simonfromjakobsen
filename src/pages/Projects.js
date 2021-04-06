@@ -1,5 +1,16 @@
 import './Projects.css';
-import { ProjectCard } from '../components/ProjectCard';
+
+export function ProjectCard(props) {
+    return <div className="ProjectCard" style={{backgroundColor: props.color}}>
+        <div className="cardImage" style={{backgroundImage: `url("${props.imageUrl}")`}} ></div>
+        <h2>
+            Projekt Titel
+        </h2>
+        <h3>
+            Dette er et projekt jeg gerne vil dele
+        </h3>
+    </div>
+}
 
 export default function Projects(props) {
     return (
@@ -14,11 +25,11 @@ export default function Projects(props) {
             </h2>
             <hr />
             <div id="projectsGrid">
-            <ProjectCard color={'#242424'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
-            <ProjectCard color={'#242424'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
-            <ProjectCard color={'#242424'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
-            <ProjectCard color={'#242424'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
-            <ProjectCard color={'#242424'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
+            <ProjectCard color={'rgb(200, 100, 100)'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
+            <ProjectCard color={'rgb(200, 200, 100)'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
+            <ProjectCard color={'rgb(200, 100, 200)'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
+            <ProjectCard color={'rgb(100, 200, 100)'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
+            <ProjectCard color={'rgb(100, 200, 200)'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
             </div>
             <hr />
             <h1>
