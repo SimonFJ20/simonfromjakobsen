@@ -1,3 +1,4 @@
+import Contact from '../pages/Contact';
 import Home from '../pages/Home';
 import Projects from '../pages/Projects';
 import './Site.css';
@@ -14,7 +15,7 @@ function GetSite(props) {
             return <div>cfgdfgdfgdfd</div>;
         case '/contact':
             window.history.pushState({}, 'Simon From Jakobsen', '/contact')
-            return <div>kgdfgdfgdfgd</div>;
+            return <Contact page={props.page} setPage={props.setPage}></Contact>;
         default:
             console.log(props.page)
             return (

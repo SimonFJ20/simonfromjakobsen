@@ -1,0 +1,52 @@
+.ContactTitle {
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+
+.Contact h1 {
+    font-size: 40px;
+}
+
+.Contact h2 {
+    font-weight: 500;
+}
+
+.Contact h1.title {
+    font-size: 60px;
+    text-shadow: 1px 1px 1px black, 2px 2px 5px black;
+}
+
+.Contact h3.underTitle {
+    font-size: 30px;
+    color: rgb(200, 200, 200);
+    text-shadow: 1px 1px 1px black, 2px 2px 5px black;
+}
+
+::selection {
+    background-color: rgb(150, 150, 150);
+    color: rgb(230, 230, 230);
+}
+
+hr {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.ContactInlineLink {
+    margin: inherit;
+    padding: inherit;
+    border: none;
+    background-color: inherit;
+    font: inherit;
+    color: rgb(0, 119, 255);
+    outline: none;
+    padding-right: 1px;
+}.ContactInlineLink:hover {
+    cursor: pointer;
+}.ContactInlineLink:active {
+    padding-right: 0;
+    padding-left: 1px;
+}
+
