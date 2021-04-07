@@ -41,6 +41,7 @@
 
 .SocialElement img {
     height: 40px;
+    width: auto;
     white-space: nowrap;
     
 }
