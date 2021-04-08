@@ -50,3 +50,55 @@ hr {
     padding-left: 1px;
 }
 
+.Contact pre {
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+    margin: 25px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 0;
+    border-radius: 15px;
+    border: 2px solid rgb(150, 150, 150);
+}
+
+.Contact code {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.Contact #copy {
+    background-color: rgb(120, 120, 120);
+    border: 2px solid rgb(160, 160, 160);
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(240, 240, 240);
+}.Contact #copy:hover {
+    background-color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+.Contact #socialLinks {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    place-items: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.Contact #socialLinks img {
+    padding: 5px;
+    width: 50px;
+}
+
+.Contact #socialLinks img:hover {
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px;
+    filter: invert();
+}

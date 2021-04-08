@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Navigator from './components/Navigator';
@@ -9,13 +9,7 @@ export default function App() {
     const [page, setPage] = useState(window.location.pathname);
     if(page === '/') setPage('/home');
 
-    
-
     const appDiv = useRef(null);
-    useEffect(() => {
-        appDiv.current.scrollTo(0, 0)
-    }, []);
-
     const scroolToTopIfNotNull = () => {
         try {
             appDiv.current.scrollTo(0, 0)
