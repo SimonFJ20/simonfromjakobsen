@@ -35,7 +35,7 @@ const TextClip = (props) => {
 }
 
 const Social = (props) => {
-    return <a href={props.link} title={props.alt}><img src={props.src} alt={props.alt} /></a>
+    return <a href={props.link} title={props.alt} target="blank"><img src={props.src} alt={props.alt} /></a>
 }
 
 export default function Contact(props) {
@@ -46,11 +46,19 @@ export default function Contact(props) {
                 <h1>
                     Kontakt
                 </h1>
+            
+
+            <div id="socialLinks">
+                <Social src={linkedinLogo} alt={'LinkedIn Profil'} link={'https://www.linkedin.com/in/simon-from-jakobsen-95b3a81ba/'} ></Social>
+                <Social src={githubLogo} alt={'GitHub Profil'} link={'https://github.com/SimonFJ20'} ></Social>
+                <Social src={youtubeLogo} alt={'YouTube Profil'} link={'https://www.youtube.com/channel/UC5kviVFkYpoWzvWhpBJsNtw'} ></Social>
+                <Social src={facebookLogo} alt={'Facebook Profil'} link={'https://www.facebook.com/profile.php?id=100006281927991'} ></Social>
+                <Social src={twitterLogo} alt={'Twitter Profil'} link={'https://www.linkedin.com/in/simon-from-jakobsen-95b3a81ba/'} ></Social>
+            </div>
+
             <hr />
 
-            <h2>
-                Email
-            </h2>
+            <h2>Email</h2>
 
             <h3>
                 Email er den bedste måde at komme i kontakt med mig, jeg læser mails flere gange om dagen.<br/>
@@ -68,7 +76,7 @@ export default function Contact(props) {
 
             <h3>
                 Telefon er en anden måde at kontakte mig. Jeg går i skole fuld tid og mine vågentimer kan variere,<br/>
-                derfor garanterer jeg ikke jeg tager den første gang. Send da gerne en SMS, og jeg vil selvfølge ringe tilbage, hurtigst muligt.
+                derfor garanterer jeg ikke jeg tager den første gang. Men send gerne en SMS, og jeg vil selvfølge ringe tilbage, hurtigst muligt.
             </h3>
 
             <TextClip>+45 6060 2456</TextClip>
@@ -78,28 +86,84 @@ export default function Contact(props) {
 
             <hr />
 
-            <h2>Sociale Medier</h2>
+            
 
-            <div id="socialLinks">
-                <Social src={linkedinLogo} alt={'LinkedIn Profil'} link={'https://www.linkedin.com/in/simon-from-jakobsen-95b3a81ba/'} ></Social>
-                <Social src={githubLogo} alt={'GitHub Profil'} link={'https://github.com/SimonFJ20'} ></Social>
-                <Social src={youtubeLogo} alt={'YouTube Profil'} link={'https://www.youtube.com/channel/UC5kviVFkYpoWzvWhpBJsNtw'} ></Social>
-                <Social src={facebookLogo} alt={'Facebook Profil'} link={'https://www.facebook.com/profile.php?id=100006281927991'} ></Social>
-                <Social src={twitterLogo} alt={'Twitter Profil'} link={'https://www.linkedin.com/in/simon-from-jakobsen-95b3a81ba/'} ></Social>
+
+            <div id="praktikpladsGrid">
+
+                <div>
+
+                    <h2>
+                        Hvorfor søger jeg praktikplads?
+                    </h2>
+                    <h3>
+                        Jeg er i færd med at tage en EUX, som datatekniker.
+                        En EUX uddannelse er en HTX eksamen og et svendebrev.
+                        Til den gymnasielle del, går jeg i skole, som normalt på et gymnasie.
+                        Men for at få svendebrevet skal jeg i praktik i et firma.
+                        Derfor har jeg brug for en praktikplads.
+                    </h3>
+
+                    <hr/>
+
+                    <h2>
+                        Hvorfor speciale i programmering?
+                    </h2>
+                    <h3>
+                        Jeg har i flere år brugt lang tid på at programmere.
+                        Jeg er selvlært i programmering, og startede for ca. seks år siden.
+                        Jeg har arbejdet med mange forskellige emner fra hjemmesider til firmware til hjemmelavet hardware.
+                        Derfor føler jeg at programmeringsretningen, for mig, er at fortrække, fremfor infrastruktur.
+                    </h3>
+
+                    <hr/>
+
+                    <h2>
+                        Hvad kan jeg tilbyde?
+                    </h2>
+                    <h3>
+                        Jeg kan tilbyde et åbent og enthusiastisk mindset. 
+                        Jeg vil møde til tiden og vise interresse og deltagelse.
+                        Siden jeg allerede kan navigere computerfaget med okay kompetence, 
+                        vil jeg ikke heller ikke være helt ny til faget.
+                        Jeg kan tilbyde professionel og respekterende opførsel og aktiv deltagelse i et professionelt erhversmiljø.
+                    </h3>
+                </div>
+
+                
+                <div>
+                    <hr/>
+
+                    <h2>
+                        Hvorfor datatekniker?
+                    </h2>
+                    <h3>
+                        Jeg har lige siden jeg var lille, haft en stor interresse indenfor teknik, elektronik og computere.
+                        Jeg bruger meget af min fritid, på at arbejde med forskellige emner indenfor computerfaget.
+                        Derfor føler jeg at datatekniker uddannelsen passer mig godt.
+                    </h3>
+
+                    <hr/>
+
+                    <h2>
+                        Praktikpladsens placering
+                    </h2>
+                    <h3>
+                        Lige nu, bor jeg i Viborg. Jeg går også i skole her i Viborg.
+                        Efter sommerferien (2021) skal jeg halvårligt skifte mellem praktikpladsen og skole,
+                        hvor skoledelen foregår i Viborg. Derfor kan jeg ikke tage praktikpladser, som er længere væk end 1 til 1½ time fra Viborg.
+                        Med mindre en aftale om bosted kan blive gennemført.
+                        Men lige meget hvor lokationen befinder sig, er i altid velkommen til at kontakte mig.
+                    </h3>
+                </div>
+
+            
             </div>
 
+            <h3>I forhold til direkte kontakt, refererer jeg igen til min Email på toppen af siden</h3>
 
-            <hr />
-            <h1>
-                Jeg søger Praktikplads
-            </h1>
-            <h2>
-                Jeg søger lige nu (siden 23-03-2021) praktikplads, som Datatekniker med speciale i programmering<br/>
-                Det gør jeg, fordi jeg lige nu er under uddannelse i EUX på Mercantec Gymnasium i Viborg, som Datatekniker.<br/>
-                Hvis du som firma søger en Datateknikerlærling med speciale i programmering,<br/> så er du meget velkommen
-                til at kontakte mig. <br/>
-                Se siden <span className="ContactInlineLink" onClick={() => {props.setPage('/contact')}}>'Kontakt'</span>, for mere information.
-            </h2>
+            <hr/>
+
             <br/><br/>
         </div>
     );
