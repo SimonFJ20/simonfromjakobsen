@@ -1,4 +1,5 @@
 import Contact from '../pages/Contact';
+import CV from '../pages/CV';
 import Home from '../pages/Home';
 import Projects from '../pages/Projects';
 import './Site.css';
@@ -12,7 +13,7 @@ function GetSite(props) {
             return <Projects page={props.page} setPage={props.setPage}></Projects>;
         case '/cv':
             window.history.pushState({}, 'Simon From Jakobsen', '/cv')
-            return <div>cfgdfgdfgdfd</div>;
+            return <CV page={props.page} setPage={props.setPage}></CV>;
         case '/contact':
             window.history.pushState({}, 'Simon From Jakobsen', '/contact')
             return <Contact page={props.page} setPage={props.setPage}></Contact>;
