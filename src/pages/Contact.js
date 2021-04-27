@@ -126,7 +126,7 @@ export default function Contact(props) {
                         Jeg vil møde til tiden og vise interresse og deltagelse.
                         Siden jeg allerede kan navigere computerfaget med okay kompetence, 
                         vil jeg ikke heller ikke være helt ny til faget.
-                        Jeg kan tilbyde professionel og respekterende opførsel og aktiv deltagelse i et professionelt erhversmiljø.
+                        Jeg kan tilbyde professionel, respekterende opførsel og aktiv deltagelse i et professionelt erhvervsmiljø.
                     </h3>
                 </div>
 
