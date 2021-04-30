@@ -1,9 +1,9 @@
 import './Home.css';
-import desktopLogo from './assets/desktopLogo.svg';
-import webLogo from './assets/webLogo.svg';
-import videogameLogo from './assets/videogameLogo.svg';
-import serverLogo from './assets/serverLogo.svg';
-import hardwareLogo from './assets/hardwareLogo.svg';
+import desktopLogo from '../assets/desktopLogo.svg';
+import webLogo from '../assets/webLogo.svg';
+import videogameLogo from '../assets/videogameLogo.svg';
+import serverLogo from '../assets/serverLogo.svg';
+import hardwareLogo from '../assets/hardwareLogo.svg';
 
 export default function Home(props) {
     return (

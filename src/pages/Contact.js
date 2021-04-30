@@ -1,10 +1,10 @@
 import { useRef } from 'react';
 import './Contact.css';
-import linkedinLogo from './assets/socials/linkedin512.png';
-import githubLogo from './assets/socials/github512.png';
-import youtubeLogo from './assets/socials/youtube512.png';
-import facebookLogo from './assets/socials/facebook512.png';
-import twitterLogo from './assets/socials/twitter512.png';
+import linkedinLogo from '../assets/socials/linkedin512.png';
+import githubLogo from '../assets/socials/github512.png';
+import youtubeLogo from '../assets/socials/youtube512.png';
+import facebookLogo from '../assets/socials/facebook512.png';
+import twitterLogo from '../assets/socials/twitter512.png';
 
 const copyText = (ref) => {
     try {
