@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import ProjectReader from '../components/ProjectReader';
 import './Projects.css';
 
 export function ProjectCard(props) {
@@ -13,6 +15,14 @@ export function ProjectCard(props) {
 }
 
 export default function Projects(props) {
+    const { readerState, setReaderState } = useState(false);
+    const { readerHtml, setReaderHtml } = useState(null);
+
+    const setReader = (link) => {
+        setReaderHtml = link;
+        setReaderState = true;
+    }
+
     return (
         <div className="Projects">
             <div className="ProjectsTitle">
@@ -25,11 +35,35 @@ export default function Projects(props) {
             </h2>
             <hr />
             <div id="projectsGrid">
-            <ProjectCard color={'rgb(200, 100, 100)'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
-            <ProjectCard color={'rgb(200, 200, 100)'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
-            <ProjectCard color={'rgb(200, 100, 200)'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
-            <ProjectCard color={'rgb(100, 200, 100)'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
-            <ProjectCard color={'rgb(100, 200, 200)'} imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} ></ProjectCard>
+                <ProjectCard 
+                    color={'rgb(200, 100, 100)'} 
+                    imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} 
+                    onClick={() => setReader('/projects/messanger.html')} >
+                </ProjectCard>
+                <ProjectCard 
+                    color={'rgb(200, 200, 100)'} 
+                    imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} 
+                    onClick={() => setReader('/projects/messanger.html')} >
+
+                </ProjectCard>
+                <ProjectCard 
+                    color={'rgb(200, 100, 200)'} 
+                    imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} 
+                    onClick={() => setReader('/projects/messanger.html')} >
+
+                </ProjectCard>
+                <ProjectCard 
+                    color={'rgb(100, 200, 100)'} 
+                    imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} 
+                    onClick={() => setReader('/projects/messanger.html')} >
+
+                </ProjectCard>
+                <ProjectCard 
+                    color={'rgb(100, 200, 200)'} 
+                    imageUrl={'https://s27389.pcdn.co/wp-content/uploads/2016/10/AdobeStock_114525500.jpeg'} 
+                    onClick={() => setReader('/projects/messanger.html')} >
+
+                </ProjectCard>
             </div>
             <hr />
             <h1>
@@ -43,6 +77,9 @@ export default function Projects(props) {
                 Se siden <span className="ProjectsInlineLink" onClick={() => {props.setPage('/contact')}}>'Kontakt'</span>, for mere information.
             </h2>
             <br/><br/>
+
+            <ProjectReader state={readerState} htmlLink={readerHtml} ></ProjectReader>
+
         </div>
     );
 }

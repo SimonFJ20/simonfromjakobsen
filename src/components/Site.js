@@ -5,20 +5,21 @@ import Projects from '../pages/Projects';
 import './Site.css';
 
 function GetSite(props) {
-    switch (props.page) {
+    const page = props.page.replace(/\/$/, '');
+    switch (page) {
         case '/home':
-            return <Home page={props.page} setPage={props.setPage}></Home>;
+            return <Home page={page} setPage={props.setPage}></Home>;
         case '/projects':
             window.history.pushState({}, 'Simon From Jakobsen', '/projects')
-            return <Projects page={props.page} setPage={props.setPage}></Projects>;
+            return <Projects page={page} setPage={props.setPage}></Projects>;
         case '/cv':
             window.history.pushState({}, 'Simon From Jakobsen', '/cv')
-            return <CV page={props.page} setPage={props.setPage}></CV>;
+            return <CV page={page} setPage={props.setPage}></CV>;
         case '/contact':
             window.history.pushState({}, 'Simon From Jakobsen', '/contact')
-            return <Contact page={props.page} setPage={props.setPage}></Contact>;
+            return <Contact page={page} setPage={props.setPage}></Contact>;
         default:
-            console.log(props.page)
+            console.log(page)
             return (
                 <div>
                     <h1>404 ikke fundet</h1>
