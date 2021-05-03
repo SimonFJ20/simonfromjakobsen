@@ -33,17 +33,6 @@ hr {
     margin-bottom: 100px;
 }
 
-.Projects #projectsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0;
-    background-color: rgb(180, 180, 180);
-    width: 70%;
-    margin-left: 15%;
-    border-radius: 10px;
-}
-
-
 .ProjectsInlineLink {
     margin: inherit;
     padding: inherit;
@@ -61,11 +50,24 @@ hr {
 }
 
 
+.Projects #projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 480px));
+    place-content: center;
+    margin: 0;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
 
 .ProjectCard {
     margin: 30px;
     padding: 25px;
-    border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     text-align: center;
 }.ProjectCard:hover {
@@ -75,15 +77,5 @@ hr {
     background-color: rgb(40, 40, 40) !important;
 }.ProjectCard:active {
     background-color: rgb(60, 60, 60) !important;
-}
-
-.ProjectCard .cardImage {
-    width: 90%;
-    margin: 5%;
-    height: 100px;
-    background-size: 100%;
-    background-position: top center;
-    background-repeat: no-repeat;
-    border-radius: 5px;
 }
 
