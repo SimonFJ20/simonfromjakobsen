@@ -28,7 +28,7 @@ export default function Projects(props) {
             <hr />
             <div id="projectsGrid">
 
-                <ProjectCard html="messanger.html" setReaderShown={setReaderShown} setReaderHtml={setReaderHtml} >
+                <ProjectCard html="simonfromjakobsen.html" setReaderShown={setReaderShown} setReaderHtml={setReaderHtml} >
                     <h1>Denne Side</h1>
                     <h2>Min egen personlige hjemmeside</h2>
                     <h4>ReactJS, JavaScript, CSS, HTML</h4>
