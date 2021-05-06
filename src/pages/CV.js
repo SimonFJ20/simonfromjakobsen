@@ -8,6 +8,8 @@ export default function CV(props) {
                 <h1>
                     CV
                 </h1>
+
+                <h2>Denne side er under konstruktion.</h2>
         
             <hr />
 
