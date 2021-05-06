@@ -1,10 +1,10 @@
 
 #ProjectReader {
     position: absolute;
-    top: 10vh;
-    left: 10vw;
-    width: 80vw;
-    height: 80vh;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
+    height: 90vh;
 
     z-index: 6;
 
@@ -45,8 +45,12 @@
     height: calc(100% - 100px);
     white-space: normal;
     word-break: break-word;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     border: 2px solid rgb(80, 80, 80);
+    padding-left: 25%;
+    padding-right: 25%;
+    box-sizing: border-box;
 }
 
 #ProjectReader > #readerContent > p {
@@ -58,7 +62,15 @@
 }
 
 #ProjectReader > #readerContent > img {
-    max-width: 70%;
+    max-width: 100%;
+}#ProjectReader > #readerContent > img:hover {
+    cursor: pointer;
+}#ProjectReader > #readerContent > img:active {
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
 }
+
 
 
