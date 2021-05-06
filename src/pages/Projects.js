@@ -60,7 +60,7 @@ export default function Projects(props) {
                 Det gør jeg, fordi jeg lige nu er under uddannelse i EUX på Mercantec Gymnasium i Viborg, som Datatekniker.<br/>
                 Hvis du som firma søger en Datateknikerlærling med speciale i programmering,<br/> så er du meget velkommen
                 til at kontakte mig. <br/>
-                Se siden <span className="ProjectsInlineLink" onClick={() => {props.setPage('/contact')}}>'Kontakt'</span>, for mere information.
+                Se siden <span className="ProjectsInlineLink" onClick={() => {props.setPage('/contact')}}>Kontakt</span>, for mere information.
             </h2>
             <br/><br/>
 

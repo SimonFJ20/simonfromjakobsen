@@ -17,7 +17,7 @@ export default function Home(props) {
                 </h3>
             </div>
                 <h1>
-                    Interresse for Fullstack Softwareudvikling
+                    Interesse for Fullstack Softwareudvikling
                 </h1>
             <h2>
                 Jeg interesserer mig meget for IT og computere, specielt hardware- og softwareudvikling.<br/>
@@ -36,7 +36,7 @@ export default function Home(props) {
                 <img src={videogameLogo} alt="Video Spil" />
                 <img src={serverLogo} alt="Server Håndering" />
                 <img src={hardwareLogo} alt="Hardware Fremstilling" className="last"/>
-                <h3>PC Applikationer med Java og .NET</h3>
+                <h3>PC Applikationer med Java og C# .NET</h3>
                 <h3>Webapps med ReactJS, Express og MongoDB</h3>
                 <h3>Spiludvikling med Java og TypeScript</h3>
                 <h3>Opsætning og håndtering af Webservere med Linux</h3>
@@ -51,7 +51,7 @@ export default function Home(props) {
                 Det gør jeg, fordi jeg lige nu er under uddannelse i EUX på Mercantec Gymnasium i Viborg, som Datatekniker.<br/>
                 Hvis du som firma søger en Datateknikerlærling med speciale i programmering,<br/> så er du meget velkommen
                 til at kontakte mig. <br/>
-                Se siden <span className="ProjectsInlineLink" onClick={() => {props.setPage('/contact')}}>'Kontakt'</span>, for mere information.
+                Se siden <span className="ProjectsInlineLink" onClick={() => {props.setPage('/contact')}}>Kontakt</span>, for mere information.
             </h2>
             <br/><br/>
         </div>
