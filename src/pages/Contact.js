@@ -151,7 +151,7 @@ export default function Contact(props) {
                     <h3>
                         Lige nu, bor jeg i Viborg. Jeg går også i skole her i Viborg.
                         Efter sommerferien (2021) skal jeg halvårligt skifte mellem praktikpladsen og skole,
-                        hvor skoledelen foregår i Viborg. Derfor kan jeg ikke tage praktikpladser, som er længere væk end 1 til 1½ time fra Viborg.
+                        hvor skoledelen foregår i Viborg. Derfor vil jeg foretrække praktikpladser, som ikke er længere væk end 1½ time fra Viborg.
                         Med mindre en aftale om bosted kan blive gennemført.
                         Men lige meget hvor lokationen befinder sig, er i altid velkommen til at kontakte mig.
                     </h3>
@@ -160,7 +160,7 @@ export default function Contact(props) {
             
             </div>
 
-            <h3>I forhold til direkte kontakt, refererer jeg igen til min Email på toppen af siden</h3>
+            <h3>Kontakt mig på Email eller Telefon. Se toppen</h3>
 
             <hr/>
 
