@@ -18,6 +18,7 @@
 }
 
 .Contact h3 {
+    line-height: 30px;
     font-weight: 500;
 }
 
@@ -109,9 +110,11 @@ hr {
 }
 
 .Contact #praktikpladsGrid {
+    text-align: left;
     border-left: 2px solid grey;
     border-right: 2px solid grey;
     display: grid;
+    gap: 10px;
     margin-left: 22vw;
     margin-right: 22vw;
     padding-left: 3vw;

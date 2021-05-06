@@ -11,6 +11,7 @@
 }
 
 .Home h2 {
+    line-height: 40px;
     font-weight: 500;
 }
 
@@ -21,7 +22,7 @@
 
 .Home h3.underTitle {
     font-size: 30px;
-    color: rgb(200, 200, 200);
+    color: rgb(219, 219, 219);
     text-shadow: 1px 1px 1px black, 2px 2px 5px black;
 }
 
