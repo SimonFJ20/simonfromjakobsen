@@ -24,10 +24,10 @@ export default function Footer(props) {
         <div className="Footer">
             <h2>Simon From Jakobsen</h2>
             <div className="Social">
-                <Social src={githubLogo} alt={'github'} link={githubLink} >SimonFJ20</Social>
-                <Social src={linkedInLogo} alt={'linkedIn'} link={linkedInLink} >Simon From Jakobsen</Social>
                 <Social src={emailLogo} alt={'email'} >simonfromjakobsen@gmail.com</Social>
                 <Social src={phoneLogo} alt={'mobile phone number'} > +45 6060 2456</Social>
+                <Social src={githubLogo} alt={'github'} link={githubLink} >SimonFJ20</Social>
+                <Social src={linkedInLogo} alt={'linkedIn'} link={linkedInLink} >Simon From Jakobsen</Social>
             </div>
             <p className="madeby">Siden er lavet af Simon From Jakobsen</p>
         </div>
