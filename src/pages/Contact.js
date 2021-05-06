@@ -53,7 +53,7 @@ export default function Contact(props) {
                 <Social src={githubLogo} alt={'GitHub Profil'} link={'https://github.com/SimonFJ20'} ></Social>
                 <Social src={youtubeLogo} alt={'YouTube Profil'} link={'https://www.youtube.com/channel/UC5kviVFkYpoWzvWhpBJsNtw'} ></Social>
                 <Social src={facebookLogo} alt={'Facebook Profil'} link={'https://www.facebook.com/profile.php?id=100006281927991'} ></Social>
-                <Social src={twitterLogo} alt={'Twitter Profil'} link={'https://www.linkedin.com/in/simon-from-jakobsen-95b3a81ba/'} ></Social>
+                <Social src={twitterLogo} alt={'Twitter Profil'} link={'https://www.twitter.com/simonfj20/'} ></Social>
             </div>
 
             <hr />
@@ -75,8 +75,9 @@ export default function Contact(props) {
             </h2>
 
             <h3>
-                Telefon er en anden måde at kontakte mig. Jeg går i skole fuld tid og mine vågentimer kan variere,<br/>
-                derfor garanterer jeg ikke jeg tager den første gang. Men send gerne en SMS, og jeg vil selvfølge ringe tilbage, hurtigst muligt.
+                Telefon er en anden måde at kontakte mig.<br/>
+                Dog går jeg i skole fuld tid, og jeg kan derfor ikke altid svarer først gang.<br/>
+                Men send gerne en SMS, og jeg vil selvfølge ringe tilbage, hurtigst muligt.
             </h3>
 
             <TextClip>+45 6060 2456</TextClip>
