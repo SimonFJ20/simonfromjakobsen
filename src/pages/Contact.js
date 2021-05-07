@@ -154,7 +154,7 @@ export default function Contact(props) {
                         Efter sommerferien (2021) skal jeg halvårligt skifte mellem praktikpladsen og skole,
                         hvor skoledelen foregår i Viborg. Derfor vil jeg foretrække praktikpladser, som ikke er længere væk end 1½ time fra Viborg.
                         Med mindre en aftale om bosted kan blive gennemført.
-                        Men lige meget hvor lokationen befinder sig, er i altid velkommen til at kontakte mig.
+                        Men lige meget hvor lokationen befinder sig, er I altid velkommen til at kontakte mig.
                     </h3>
                 </div>
 
