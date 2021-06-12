@@ -13,13 +13,13 @@ export default function CV(props) {
         
             <hr />
 
-            <h2>Lidt om mig</h2>
+            <h1>Lidt om mig</h1>
 
-            <h3>
+            <h2>
                 Jeg er 17 år gammel. Jeg har bestået folkeskole eksamen og GF1 på EUX. Jeg er i gang med GF2 på EUX<br/>
                 som Datatekniker m. s. i. programmering. Jeg har stor interresse indenfor IT og programmering. Jeg<br/>
                 har programmeret 6 år. 
-            </h3>
+            </h2>
 
             <hr />
             <h1>
