@@ -72,13 +72,18 @@ hr {
     padding: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     text-align: center;
+
+    background-color: #064cce;
 }.ProjectCard p {
     line-height: 25px;
 }.ProjectCard:hover {
     margin: 20px;
     padding: 35px;
     cursor: pointer;
+    /*
     background-color: rgb(40, 40, 40) !important;
+    */
+    background-color: #064cce !important;
 }.ProjectCard:active {
     background-color: rgb(60, 60, 60) !important;
 }
