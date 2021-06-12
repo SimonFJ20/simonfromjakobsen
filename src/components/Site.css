@@ -2,6 +2,8 @@
     width: 100vw;
     min-height: calc(70vh - 130px);
     overflow-x: hidden;
+    /*
     margin-top: 119px;
+    */
     text-align: center;
 }
