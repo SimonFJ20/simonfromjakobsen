@@ -124,7 +124,7 @@ export default function Contact(props) {
                     </h2>
                     <h3>
                         Jeg kan tilbyde et åbent og enthusiastisk mindset. 
-                        Jeg vil møde til tiden og vise interresse og deltagelse.
+                        Jeg vil møde til tiden og vise interesse og deltagelse.
                         Siden jeg allerede kan navigere computerfaget med okay kompetence, 
                         vil jeg ikke heller ikke være helt ny til faget.
                         Jeg kan tilbyde professionel, respekterende opførsel og aktiv deltagelse i et professionelt erhvervsmiljø.
