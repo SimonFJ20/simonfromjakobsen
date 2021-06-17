@@ -10,7 +10,7 @@ export default function App() {
     if(page === '/') setPage('/home');
 
     const appDiv = useRef(null);
-    const scroolToTopIfNotNull = () => {
+    const scrollToTopIfNotNull = () => {
         try {
             appDiv.current.scrollTo(0, 0)
         } catch {
@@ -19,7 +19,7 @@ export default function App() {
     }
 
     return (
-        <div className="App" ref={appDiv} onLoad={scroolToTopIfNotNull()} >
+        <div className="App" ref={appDiv} onLoad={scrollToTopIfNotNull()} >
             <div className="AppTop">
                 <Topbar></Topbar>
                 <Navigator page={page} setPage={setPage}></Navigator>
