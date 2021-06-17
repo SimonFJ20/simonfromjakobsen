@@ -9,13 +9,13 @@ let linkedInLink = 'https://www.linkedin.com/in/simon-from-jakobsen-95b3a81ba/';
 
 function Social(props) {
 
-    if('link' in props) return <a href={props.link} target="blank"><div className="SocialElement">
+    if('link' in props) return <a href={props.link} target="blank" tabIndex="0"><div className="SocialElement">
         <img alt={props.alt} src={props.src}/>
         <h2>{props.children}</h2>
     </div></a>;
     else return <div className="SocialElement">
         <img alt={props.alt} src={props.src}/>
-        <h2>{props.children}</h2>
+        <h2 tabIndex="0">{props.children}</h2>
     </div>;
 }
 

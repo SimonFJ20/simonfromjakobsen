@@ -25,7 +25,8 @@
     margin: 0;
 }
 
-.NavigatorLink:hover {
+.NavigatorLink:hover,
+.NavigatorLink:focus-visible {
     background-color: rgb(67, 137, 216);
     cursor: pointer;
 }

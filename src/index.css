@@ -11,3 +11,24 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
+
+.InlineLink {
+    margin: inherit;
+    padding: inherit;
+    border: none;
+    background-color: inherit;
+    font: inherit;
+    color: rgb(0, 119, 255);
+    outline: none;
+    padding-right: 1px;
+}.InlineLink:hover {
+    cursor: pointer;
+    text-decoration: 1px solid underline;
+}.InlineLink:active {
+    padding-right: 0;
+    padding-left: 1px;
+}.InlineLink::selection {
+    background-color: rgb(150, 150, 150);
+}.InlineLink:focus-visible {
+    outline: 1px dotted #fff;
+}

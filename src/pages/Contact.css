@@ -38,23 +38,6 @@ hr {
     margin-bottom: 100px;
 }
 
-
-.ContactInlineLink {
-    margin: inherit;
-    padding: inherit;
-    border: none;
-    background-color: inherit;
-    font: inherit;
-    color: rgb(0, 119, 255);
-    outline: none;
-    padding-right: 1px;
-}.ContactInlineLink:hover {
-    cursor: pointer;
-}.ContactInlineLink:active {
-    padding-right: 0;
-    padding-left: 1px;
-}
-
 .Contact pre {
     background-color: rgb(20, 20, 20);
     padding: 20px;
@@ -103,7 +86,8 @@ hr {
     width: 50px;
 }
 
-.Contact #socialLinks img:hover {
+.Contact #socialLinks img:hover,
+.Contact #socialLinks a:focus-visible img {
     background-color: rgb(20, 20, 20);
     border-radius: 5px;
     filter: invert();

@@ -31,7 +31,7 @@ const copyText = (ref) => {
 const TextClip = (props) => {
     const ref = useRef(null);
     return <div><pre><code ref={ref} >{props.children}</code></pre>
-    <button id="copy" onClick={() => {copyText(ref)}} >Kopier</button></div>
+    <button id="copy" onClick={() => {copyText(ref)}} onKeyUp={(event) => {if(event.key === 'Enter') event.target.click();}} >Kopier</button></div>
 }
 
 const Social = (props) => {

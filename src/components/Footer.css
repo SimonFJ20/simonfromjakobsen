@@ -14,6 +14,11 @@
     text-decoration: none;
 }
 
+.Social a:focus-visible > .SocialElement {
+    border: 2px solid white;
+    cursor: pointer;
+}
+
 .SocialElement {
     display: grid;
     grid-template-columns: auto auto;
@@ -25,7 +30,8 @@
     padding-right: 50px;
     margin: 1px;
     width: 600px;
-}.SocialElement:hover {
+}.SocialElement:hover,
+.SocialElement:focus-within {
     border: 2px solid white;
     cursor: pointer;
 }

@@ -8,10 +8,16 @@ function NavigatorLink(props) {
 
     return (
         <div
+            tabIndex="0"
             className={isActive()}
             onClick={() => {
                 props.setPage(props.thisPage);
                 window.history.pushState({}, 'Simon From Jakobsen', props.thisPage);
+            }}
+            onKeyUp={(event) => {
+                if (event.key === 'Enter') {
+                    event.target.click();
+                }
             }}
         >
             <h2>{props.children}</h2>

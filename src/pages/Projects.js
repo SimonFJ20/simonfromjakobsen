@@ -3,7 +3,10 @@ import ProjectReader from '../components/ProjectReader';
 import './Projects.css';
 
 const ProjectCard = (props) => {
-    return <div className="ProjectCard" onClick={() => {props.setReaderHtml('/projects/' + props.html); props.setReaderShown(true)}}>
+    return <div tabIndex="0" className="ProjectCard" 
+    onClick={() => {props.setReaderHtml('/projects/' + props.html); props.setReaderShown(true)}} 
+    onKeyUp={(event) => {if(event.key === 'Enter') event.target.click();}}
+    >
         {props.children}
     </div>
 }
@@ -62,7 +65,7 @@ export default function Projects(props) {
                 Hvis du som firma søger en Datateknikerlærling med<br/>
                 speciale i programmering, så er du meget velkommen
                 til at kontakte mig. <br/>
-                Se siden <span className="ProjectsInlineLink" onClick={() => {props.setPage('/contact')}}>Kontakt</span>, for mere information.
+                Se siden <span tabIndex="0" className="InlineLink" onClick={() => {props.setPage('/contact')}} onKeyUp={(event) => {if(event.key === 'Enter') event.target.click();}}>Kontakt</span>, for mere information.
             </h2>
             <br/><br/>
 

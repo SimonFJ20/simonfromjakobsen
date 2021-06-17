@@ -35,22 +35,6 @@ hr {
     margin-bottom: 100px;
 }
 
-.ProjectsInlineLink {
-    margin: inherit;
-    padding: inherit;
-    border: none;
-    background-color: inherit;
-    font: inherit;
-    color: rgb(0, 119, 255);
-    outline: none;
-    padding-right: 1px;
-}.ProjectsInlineLink:hover {
-    cursor: pointer;
-}.ProjectsInlineLink:active {
-    padding-right: 0;
-    padding-left: 1px;
-}
-
 
 .Projects #projectsGrid {
     display: grid;
@@ -76,7 +60,8 @@ hr {
     background-color: #064cce;
 }.ProjectCard p {
     line-height: 25px;
-}.ProjectCard:hover {
+}.ProjectCard:hover,
+.ProjectCard:focus-visible {
     margin: 20px;
     padding: 35px;
     cursor: pointer;

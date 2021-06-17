@@ -32,7 +32,7 @@ export default function CV(props) {
                 Hvis du som firma søger en Datateknikerlærling med<br/>
                 speciale i programmering, så er du meget velkommen
                 til at kontakte mig. <br/>
-                Se siden <span className="ProjectsInlineLink" onClick={() => {props.setPage('/contact')}}>Kontakt</span>, for mere information.
+                Se siden <span tabIndex="0" className="InlineLink" onClick={() => {props.setPage('/contact')}} onKeyUp={(event) => {if(event.key === 'Enter') event.target.click();}}>Kontakt</span>, for mere information.
             </h2>   
 
             <br/><br/>
