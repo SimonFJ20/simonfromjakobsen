@@ -139,7 +139,7 @@ export default function Contact(props) {
                         Hvorfor datatekniker?
                     </h2>
                     <h3>
-                        Jeg har lige siden jeg var lille, haft en stor interresse indenfor teknik, elektronik og computere.
+                        Jeg har lige siden jeg var lille, haft en stor interesse indenfor teknik, elektronik og computere.
                         Jeg bruger meget af min fritid, på at arbejde med forskellige emner indenfor computerfaget.
                         Derfor føler jeg at datatekniker uddannelsen passer mig godt.
                     </h3>
