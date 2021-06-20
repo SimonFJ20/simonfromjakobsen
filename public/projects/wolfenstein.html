@@ -27,7 +27,7 @@
 
 <p>
     Det startede med en fredag aften. Jeg sad skrev med min ven, og ligepludselig kom samtalen
-    hen på 3d rendering. Og så kom udfordringen: <b>Du kan ikke lave en rasterisor fra scratch (fra bunden)</b>.
+    hen på 3d rendering. Og så kom udfordringen: <b>Du kan ikke lave en rasterizer fra scratch (fra bunden)</b>.
     Og lidt som en joke tilføjede jeg: <b>Jo, og jeg kan lave den i Scratch (MIT Scratch)</b>
 </p>
 
@@ -41,7 +41,7 @@
     <br>
     En <b>rasterizer</b> er et program som laver definerede former og figurer, kaldet vektor grafik,
     om til pixel i et raster billede. Raster billeder kan man, ligesom i mit tilfælde, vise på en computerskærm.
-    <br>
+    <br><br>
     <b>MIT Scratch</b> er platform til at lave og spille simple spil. Scratch er lavet af Massachusetts Institute of Technology (MIT)
     til at lærer børn og unge om computionel tankegang og at skabe interresse i computere. Til det er Scratch meget godt,
     det har bare nogle seriøse ulemper, når det kommer til mere advancerede programmer.
@@ -50,12 +50,13 @@
 <p>
     Jeg startede projektet med at studere en video jeg havde set på en anden lejlighed. 
     <br>
-    <iframe width="100%" height="350" src="https://www.youtube.com/embed/xW8skO7MFYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="430" src="https://www.youtube.com/embed/xW8skO7MFYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br>
-    Videon er lavet af <a href="https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA">One Lone Coder aka. javidx9</a>
+    Videon er lavet af <a href="https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA" target="blank">
+        One Lone Coder aka. javidx9</a>
     og er en 40 minutters tutorial om hvordan man laver rasterizer i c++. Jeg skulle mest bruge videon til at finde
     ud af matematikken, da den er lidt svær.
-    <br>
+    <br><br>
     javidx9 har lavet mange videoer, hvor han laver og forklare små spil og andre hobby projekter, programmeret i C++.
 </p>
 
@@ -83,6 +84,129 @@
 
 <h2>
     Ctrl-C++ Ctrl-V
+</h2>
+
+<p>
+    Efter en ordenlig gennemtænkning og noget nattesøvn, havde jeg lagt en ny plan. Jeg ville starte med
+    at følge videoen trin for trin, så jeg fårstod hver enkelt linje kode. Jeg ville også gøre det i det
+    samme programmeringssprog, som han bruger i videoen: <b>C++</b>.
+    <br><br>
+    For folk som ikke kender så meget til programmeringssprog, så er der forskel på sværdhedsgraden af 
+    forskellige sprog. Fx er Scratch meget nemt og er lavet til at børn vil kunn forstå det.
+    JavaScript og Python er lavet til at alle med grundlæggende viden for programmering vil kunne forstå
+    og bruge det. Og så er der C++. Som citeret af designeren, Bjarne Stroustrup: "C++ is made to be a 
+    professional tool for professionals.". Som du nok kan regne ud er C++ lidt svært. Man kan sammenligne
+    det lidt med det tyske sprog, utrolig mange regler og endnu flere faldgrupper.
+</p>
+
+<p>
+    Men for at kunne lave det i C++ var jeg nød til at åbne mit "yndlings"-program Visual Studio. Det er
+    langsommere end en 2CV og mere uoverskueligt end en tabt spand maling. Det er fyldt med menu'er og
+    andre features man aldrig bruger.
+    <br><br>
+    Men efter ca. 2 timer havde jeg et fungerende program.
+</p>
+
+<img src="/static/wolfenstein5.PNG" alt="Billede af Visual Studio der starter">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<img src="/static/wolfenstein6.PNG" alt="Billede af Visual Studio der er uoverskueligt">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<img src="https://raw.githubusercontent.com/SimonFJ20/3dWolfensteinRendering/main/version%20cpp/screenshot.PNG" alt="Billede af rasterizer">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<p>
+    Ud over det forventede gik det rimeligt smertefrit, så nu havde jeg en virkende version af programmet.
+    Der er bare en anden hage ved C++, det er at det er næsten umuligt at distribuere. Med mindre man vil
+    have at brugeren af programmet skal downloade en installer wizard med den rigtige version og 
+    installere programmet permanent,
+    eller man vil have folk skal downloade kildekoden og selv kompilerer, så er C++ ikke det mest praktiske
+    sprog i verden. En bedre ide er at lave programmet i JavaScript og have det på en hjemmeside istedet. 
+    Hjemmesider er så standardiserede
+    at alle webbrowsere (med undtagelse af gamle IE versioner) kan vise alle hjemmesider. Og siden alle
+    elektroniske devices nu om dage kan gå på nettet, vil distribuering ikke være et problem. Der er dog det
+    at C++ er mindst 10 gange hurtigere end JavaScript på hele feltet. Men det går nok.
+    <a href="https://github.com/SimonFJ20/3dWolfensteinRendering/blob/main/version%20cpp/Main.cpp" target="blank">
+        Du kan se koden her.</a>
+</p>
+
+
+
+<h2>
+    Version 1: Direkte konvertering
+</h2>
+
+<p>
+    Jeg startede med at gå linje for linje og konvertere det fra C++ til JavaScript. Der er et par forskelle
+    på JavaScript og C++, men der er også mange ligeheder. Derfor er det relativt nemt at konvertere det fra
+    det ene til det andet.
+    <br><br>
+    Der er nogle steder hvor man er nød til at finde en anden vej rundt. Fx kommunikere C++ programmet direkte
+    med windows, og det kan man ikke i JavaScript. Der er man istedet fastlåst til browseren på godt og ondt.
+    Så jeg har lavet 2 filer:
+    <br><br>
+    <b>main.js</b> indeholder selve programmet.
+    <br><br>
+    <b>util.js</b> indeholder alt kommunikation mellem programmet og browseren. Og så indeholder den forskellige
+    funktioner til at emulere det C++ specifikke kode.
+    <br><br>
+    Jeg har lige et eksempel på noget C++ specifikt kode som er konverteret til JavaScript:
+</p>
+
+<img src="/static/wolfenstein7.PNG" alt="Main.cpp">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<img src="/static/wolfenstein8.PNG" alt="main.js">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<img src="/static/wolfenstein9.PNG" alt="util.js">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<p>
+    <a href="https://gist.github.com/SimonFJ20/453c560eb931834e16ce9a9933b53990" target="blank">
+        Sammenlign på GitHub
+    </a>
+    <br>
+    <a href="https://github.com/SimonFJ20/3dWolfensteinRendering/blob/33f16c9156c10c0591d08907a890e2273b84f04f/version%20cpp/Main.cpp#L136-L154" target="blank">
+        Se Main.cpp
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://github.com/SimonFJ20/3dWolfensteinRendering/blob/33f16c9156c10c0591d08907a890e2273b84f04f/version%201/main.js#L120-L138" target="blank">
+        Se main.js
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://github.com/SimonFJ20/3dWolfensteinRendering/blob/33f16c9156c10c0591d08907a890e2273b84f04f/version%201/util.js#L46-L77" target="blank">
+        Se util.js
+    </a>
+    <br>
+    Som du nok kan se, er koden i C++ lidt utydelig og ser meget kompliceret ud. Det er noget
+    man meget gerne skulle forsøge at undgå. 
+    <br><br>
+    Kort forklaret, så regner koden hvor hvert hjørne
+    af en firkan er, i forhold med distance til spilleren. Så laver den fire par. Hvert par
+    representere et hjørne. Hvert par består af distancen fra hjørnet til spilleren, og 
+    prikproduktet af hjørnets vektor og spillerens øjevektor. Derefter sortere den de fire
+    par. Og siger derefter at den skal vise de 2 hjørner tættest på spilleren.
+    <br><br>
+    Jeg ved godt det lyder lidt indviklet. Og implementeringen i JavaScript er lavet, så den
+    refererer til en meget lang kommenter der i tekniske detaljer forklare hvad der sker.
+    Det er også noget man meget gerne skulle forsøge at undgå.
+    <br><br>
+    Men nu har jeg en fungerende program i JavaScript, som er en komplet klon af det originale C++.
+    Med grøn farve, fordi det ser godt ud.
+</p>
+
+<img src="https://raw.githubusercontent.com/SimonFJ20/3dWolfensteinRendering/main/version%201/screenshot.PNG" alt="Billede af verion 1">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<p>
+    Men jeg var ikke helt tilfreds med denne version, fx. det kode vi kiggede på. Så derfor
+    lavede jeg også
+</p>
+
+<h2>
+    Version 2: Små forbedringer
 </h2>
 
 
