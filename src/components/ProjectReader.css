@@ -82,5 +82,8 @@
     width: 90vw;
 }
 
+#ProjectReader > #readerContent i.img {
+    float: right;
+}
 
 
