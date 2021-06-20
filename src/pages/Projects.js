@@ -30,6 +30,16 @@ export default function Projects(props) {
             </h2>
             <hr />
             <div id="projectsGrid">
+
+                <ProjectCard html="wolfenstein.html" setReaderShown={setReaderShown} setReaderHtml={setReaderHtml} >
+                    <h1>3D Rendering</h1>
+                    <h2>3D rendering ligesom Wolfenstein</h2>
+                    <h4>C++, JavaScript</h4>
+                    <p>
+                        Jeg havde fri en weekend, så jeg eksperimenterede med
+                        3D rendering, ligesom det gamle Wolfenstein spil.
+                    </p>
+                </ProjectCard>
                 
                 <ProjectCard html="messanger.html" setReaderShown={setReaderShown} setReaderHtml={setReaderHtml} >
                     <h1>MessAnger</h1>

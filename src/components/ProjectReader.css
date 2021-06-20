@@ -80,6 +80,8 @@
     top: 5vh;
     left: 5vw;
     width: 90vw;
+}#ProjectReader > #readerContent > img::after {
+    content: "Klik og hold nede for at zoome";
 }
 
 
