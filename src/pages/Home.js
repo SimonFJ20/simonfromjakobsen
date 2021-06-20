@@ -38,7 +38,7 @@ export default function Home(props) {
                 <img src={hardwareLogo} alt="Hardware Fremstilling" className="last"/>
                 <h3>PC Applikationer med Java og C# .NET</h3>
                 <h3>Webapps med ReactJS, Express og MongoDB</h3>
-                <h3>Spiludvikling med Java og TypeScript</h3>
+                <h3>Spiludvikling med JavaScript og C++</h3>
                 <h3>Opsætning og håndtering af Webservere med Linux</h3>
                 <h3>Design og fremstilling af Hardwareløsninger</h3>
             </div>
