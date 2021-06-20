@@ -20,7 +20,7 @@ export default function ProjectReader(props) {
         
 
         return <div id="ProjectReader">
-            <div tabindex="0" id="closeButton" onClick={props.closeReader} onKeyUp={(event) => {if(event.key === 'Enter') event.target.click();}} >X</div>
+            <div tabIndex="0" id="closeButton" onClick={props.closeReader} onKeyUp={(event) => {if(event.key === 'Enter') event.target.click();}} >X</div>
 
             <div tabIndex="0" id="readerContent" ref={readerContent} ></div>
         </div>
