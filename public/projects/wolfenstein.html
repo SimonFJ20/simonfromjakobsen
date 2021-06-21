@@ -209,5 +209,154 @@
     Version 2: Små forbedringer
 </h2>
 
+<p>
+    Det først jeg gjorde var at omdøbe mine variabler til noget som passer min stil af programmering
+    lidt bedre. Fx er variablerne 'fPlayerA' omdøbet til 'playerAngle'. Jeg har også gjort det nogles
+    steder for at gøre navnene lidt mere beskrivende. Fx er 'tp1' og 'tp2' blevet til 'now' og 'before'
+    hvilket giver bedre mening i konteksten.
+    <br><br>
+    Det næste jeg gjorde var at omskrive noget af koden af forskellige grunde.
+    <br><br>
+    Så gik jeg igenmmen alt koden igen, og lavede uddybende kommentare, hvor det var nødvendigt.
+    <br><br>
+    Og så tilføjede jeg en pil på kortet i hjørnet, så man kan se hvilken retning man peger. Min første
+    ide var at have 8 pilsymboler: ↓↘→↗↑↖←↙, og så vise den der passede bedst i forhold til spillerens
+    rotation. Men fordi der kun er 8 symboler og symbolerne har forskellige højder og derved forskydder
+    en række på skærmen, valgte jeg en anden ide.
+    <br>
+    Den anden ide gik ud på at få browseren til at rotere den. Med hjælp fra CSS og et trick der hedder
+    'transform: rotate()' kan jeg fortælle browseren at et object skal roteres til en bestemt vinkel, 
+    når den bliver vist. Og så sætter jeg bare pilens rotation til pilens rotation.
+    <br>
+    Begge løsninger var inspireret af min ven Theis Pieter. Du kan se hans personlige hjemmeside her:
+    <a href="https://tphollebeek.netlify.app" target="_blank" >tphollebeek.netlify.app</a>
+    <br>
+    Og begge løsninger står stadig i koden, den ene er bare kommenteret ud.
+</p>
 
+<img src="https://raw.githubusercontent.com/SimonFJ20/3dWolfensteinRendering/main/version%202/screenshot.PNG" alt="Billede af version 2 og pil">
+<i class="img">Klik og hold nede for at zoome.</i>
 
+<img src="/static/wolfenstein10.PNG" alt="Billede af kode">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<p>
+    Jeg har igen reviseret eksemplet fra tidligere.
+    Jeg havde fundet ud af at den måde jeg gjorde det på før ikke virkede som den skulle.
+    Så jeg omskrev den, så den virkede og så den var skrevet som JavaScript og ikke som emuleret
+    C++.
+    <br><br>
+    Den tidligere version sorterede ikke hele arrayet, kun første og sidste element. Den nye version
+    ser sådanne ud:
+</p>
+
+<img src="/static/wolfenstein11.PNG" alt="Billede af kode">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<p>
+    Nu står det hele sammen i <b>main.js</b>. Den inkluderer også en sortingsalgoritme der hedder
+    'selection sort' som du kan læse om her:
+    <a href="https://en.wikipedia.org/wiki/Selection_sort" target="blank">
+        Wikipedia - Selection sort
+    </a>.
+    Det er også der jeg har selve sortingskoden fra.
+    <br><br>
+</p>
+
+<p>
+    Nå, men målet var jo at lave noget Wolfenstein lignende grafik.
+    Og her er to billeder til sammenligning:
+</p>
+
+<img src="https://www.sapphirenation.net/-/media/sites/sapphirenation/articles/2017/09/Wolf-3d-gameplay.jpg" alt="Billede af klassisk Wolfenstein">
+<br><i class="img">Klik og hold nede for at zoome.</i>
+
+<img src="https://raw.githubusercontent.com/SimonFJ20/3dWolfensteinRendering/main/version%202/screenshot.PNG" alt="Billede af version 2 og pil">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<p>
+    Som du kan se minder vægene lidt om hinanden. Men vi mangler jo både farver
+    og nazister. Derfor lavede jeg
+</p>
+
+<h2>
+    Version 3: Bedre grafik
+</h2>
+
+<p>
+    Denne version var, omvendt hvad man ville tro, den nemmeste version at lave. Alt koden er jo skrevet.
+    Så det eneste jeg skulle gøre, var at omskrive <b>util.js</b> så den outputter til et HTML Canvas
+    istedet for ren tekst. Det var egentlig meget nemt, da jeg har meget erfaring med 2D grafik i JavaScript.
+    Det andet jeg skulle gøre var at ændre spillets opløsning fra 120x40 til 1280x720. Og så virkede det
+    strålede..... med 2 FPS. Det hakkede meget, så næste step var at optimere koden.
+    <br><br>
+    Jeg startede med at ændre opløsning fra den reelle 1280x720 til 640x360 med 2x2 størrelse pixels. Det
+    fik FPS helt op på 7. Og så eksperiementerede jeg med hvor nøjagtigt den måler længden til vægen. Det
+    blev resultatet ikke bedre af, så jeg ændrede det tilbage.
+    <br><br>
+    Siden koden var lavet til text, var farveskiftene meget hårde, så det var det næste jeg lavede om på.
+    Og min løsning var et eksempel på de løsninger der samtidig med at tilføje mere, også laver koden mindre,
+    og mere læselig. Her er version 2 og 3 til sammenligning
+</p>
+
+<img src="/static/wolfenstein12.PNG" alt="Billede af kode">
+<br><i class="img">Klik og hold nede for at zoome.</i>
+
+<img src="/static/wolfenstein13.PNG" alt="Billede af kode">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<p>
+    Så manglede jeg bare at tegne kortet, og de fire værdier på skærmen. Det er også en af de nemmere
+    opgaver som browseren gør for en. Dog er der ikke en pil på denne version, da jeg nu havde brugt
+    størstedelen af min weekend på projektet, havde jeg ikke lyst til at implementere det.
+    <br><br>
+    Her er resultatet:
+</p>
+
+<img src="https://raw.githubusercontent.com/SimonFJ20/3dWolfensteinRendering/main/version%203/screenshot.PNG" alt="Screenshot af version 3">
+<i class="img">Klik og hold nede for at zoome.</i>
+
+<p>
+    Det ligner næsten Wolfenstein, hvis man ser bort fra Nazisterne, eller mangel deraf. Men hvis
+    man ville kunne man, med lidt optimering, udbygge koden til et fuldt spil med både skyddere
+    og bad guys. Men det var ikke mit mål. Mit mål var bare at lave en rasterizer, og det lykkedes,
+    dog ikke i Scratch, men det lykkedes.
+    <br><br>
+    Siden billederne gør et dårligt arbejde af at vise spillet er du velkommen til at prøve dem her:
+    <br>
+    <a href="/static/wolfenstein/version-1/index.html" target="blank">
+        Version 1
+    </a>
+    <br>
+    <a href="/static/wolfenstein/version-2/index.html" target="blank">
+        Version 2
+    </a>
+    <br>
+    <a href="/static/wolfenstein/version-3/index.html" target="blank">
+        Version 3
+    </a>
+    <br><br>
+    Ellers kan du se alle filerne på GitHub, sammen med en EXE til c++ versionen:
+    <br>
+    <a href="https://github.com/SimonFJ20/3dWolfensteinRendering" target="blank">
+        GitHub.com/SimonFJ20/3dWolfensteinRendering
+    </a>
+    <br><br>
+    Så kan du læse lidt om min ven Theis Pieter:
+    <br>
+    <a href="https://tphollebeek.netlify.app" target="_blank" >
+        tphollebeek.netlify.app
+    </a>
+    <br><br>
+    Og så kan du se videoen der inspirerede mig til at lave projektet:
+    <br>
+    <a href="https://www.youtube.com/embed/xW8skO7MFYw" target="blank">
+        Code-It-Yourself! First Person Shooter (Quick and Simple C++)
+    </a>
+    <br>
+    Af:
+    <br>
+    <a href="https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA" target="blank">
+        One Lone Code aka. javidx9
+    </a>
+</p>
