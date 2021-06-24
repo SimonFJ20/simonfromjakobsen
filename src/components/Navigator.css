@@ -27,6 +27,6 @@
 
 .NavigatorLink:hover,
 .NavigatorLink:focus-visible {
-    background-color: rgb(67, 137, 216);
+    background-color: var(--color-accent-3);
     cursor: pointer;
 }
