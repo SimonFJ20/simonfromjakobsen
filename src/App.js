@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import './App.css';
+import './colors.css';
 import Footer from './components/Footer';
 import Navigator from './components/Navigator';
 import Site from './components/Site';
