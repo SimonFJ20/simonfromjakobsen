@@ -1,6 +1,6 @@
 .Footer {
     padding-top: 10px;
-    background-color: rgb(20, 20, 20);
+    background-color: var(--color-background-2);
     height: 400px;
 }
 

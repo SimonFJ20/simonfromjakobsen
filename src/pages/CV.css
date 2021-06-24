@@ -40,7 +40,7 @@ hr {
 }
 
 .CV pre {
-    background-color: rgb(20, 20, 20);
+    background-color: var(--color-background-2);
     padding: 20px;
     margin: 25px;
     margin-left: 20vw;
@@ -88,7 +88,7 @@ hr {
 }
 
 .CV #socialLinks img:hover {
-    background-color: rgb(20, 20, 20);
+    background-color: var(--color-background-2);
     border-radius: 5px;
     filter: invert();
 }

@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    background-color: rgb(40, 40, 40);
+    background-color: var(--color-background-1);
     color: rgb(230, 230, 230);
     height: 100vh;
     overflow-x: hidden;
