@@ -18,8 +18,8 @@
     border: 2px solid rgb(180, 180, 180);
     */
 
-    background-color: #064cce;
-    border: 2px solid #07f;
+    background-color: var(--color-accent-1);
+    border: 2px solid var(--color-accent-2);
 }
 
 #ProjectReader > #closeButton {

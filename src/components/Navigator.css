@@ -1,5 +1,5 @@
 .Navigator {
-    background-color: rgb(0, 119, 255);
+    background-color: var(--color-accent-2);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     overflow: hidden;

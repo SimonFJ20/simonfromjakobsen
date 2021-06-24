@@ -57,7 +57,7 @@ hr {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     text-align: center;
 
-    background-color: #064cce;
+    background-color: var(--color-accent-1);
 }.ProjectCard p {
     line-height: 25px;
 }.ProjectCard:hover,
@@ -68,7 +68,7 @@ hr {
     /*
     background-color: rgb(40, 40, 40) !important;
     */
-    background-color: #064cce !important;
+    background-color: var(--color-accent-1) !important;
 }.ProjectCard:active {
     background-color: rgb(60, 60, 60) !important;
 }

@@ -18,7 +18,7 @@ code {
     border: none;
     background-color: inherit;
     font: inherit;
-    color: rgb(0, 119, 255);
+    color: var(--color-accent-2);
     outline: none;
     padding-right: 1px;
 }.InlineLink:hover {
