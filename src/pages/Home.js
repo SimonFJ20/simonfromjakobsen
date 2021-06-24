@@ -4,11 +4,29 @@ import webLogo from '../assets/webLogo.svg';
 import videogameLogo from '../assets/videogameLogo.svg';
 import serverLogo from '../assets/serverLogo.svg';
 import hardwareLogo from '../assets/hardwareLogo.svg';
+import { useEffect, useRef } from 'react';
+
+
 
 export default function Home(props) {
+
+    const divHomeTitleRef = useRef(null);
+    const backgroundHighRes = new Image();
+    backgroundHighRes.src = 'https://i.ibb.co/b78Kg9B/chicago-skyline-photo-l.jpg';
+
+
+    useEffect(() => {
+        const imageLoadCheckInterval = setInterval(() => {
+            if (backgroundHighRes.complete && divHomeTitleRef !== null) {
+                clearInterval(imageLoadCheckInterval);
+                divHomeTitleRef.current.style.backgroundImage = 'url(https://i.ibb.co/b78Kg9B/chicago-skyline-photo-l.jpg)';
+            }
+        }, 100);
+    });
+
     return (
         <div className="Home">
-            <div className="HomeTitle">
+            <div className="HomeTitle" ref={divHomeTitleRef}>
                 <h1 className="title">
                     Simon From Jakobsen
                 </h1>
