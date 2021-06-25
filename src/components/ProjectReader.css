@@ -75,11 +75,20 @@
     max-width: 100%;
 }#ProjectReader > #readerContent > img:hover {
     cursor: pointer;
-}#ProjectReader > #readerContent > img:active {
+}/*#ProjectReader > #readerContent > img:active {
     position: fixed;
     top: 5vh;
     left: 5vw;
     width: 90vw;
+}*/#ProjectReader > #readerContent > img:active {
+    /* by theis */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vh;
+    object-fit: contain;
 }
 
 #ProjectReader > #readerContent i.img {
