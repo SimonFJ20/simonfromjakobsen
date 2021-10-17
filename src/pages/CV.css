@@ -104,3 +104,24 @@ hr {
     grid-template-columns: 1fr 1fr;
 }
 
+#cv-buttons a {
+    margin: 5px;
+    background-color: rgb(70, 70, 70);
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 1rem 3rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: rgb(240, 240, 240);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#cv-buttons a:hover {
+    border: 2px solid rgb(240, 240, 240);
+}
+
+#cv-buttons a:active {
+    background-color: rgb(120, 120, 120);
+}
+
+
