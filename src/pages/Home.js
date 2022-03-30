@@ -8,24 +8,6 @@ import hardwareLogo from '../assets/hardwareLogo.svg';
 
 
 export default function Home(props) {
-
-    /*
-    const divHomeTitleRef = useRef(null);
-    const backgroundHighRes = new Image();
-    backgroundHighRes.src = 'https://i.ibb.co/b78Kg9B/chicago-skyline-photo-l.jpg';
-
-
-    useEffect(() => {
-        divHomeTitleRef.current.style.backgroundImage = 'https://i.ibb.co/ZSB4Y4Q/chicago-skyline-photo-l-LOWRES.jpg';
-        const imageLoadCheckInterval = setInterval(() => {
-            if (backgroundHighRes.complete && divHomeTitleRef !== null) {
-                clearInterval(imageLoadCheckInterval);
-                divHomeTitleRef.current.style.backgroundImage = `url("${backgroundHighRes.src}")`;
-            }
-        }, 500);
-    });
-    */
-
     return (
         <div className="Home">
             <div className="HomeTitle">
@@ -33,7 +15,7 @@ export default function Home(props) {
                     Simon From Jakobsen
                 </h1>
                 <h3 className="underTitle">
-                    17 år, studerende, programmør
+                    18 år, studerende, programmør
                 </h3>
             </div>
                 <h1>
@@ -63,19 +45,6 @@ export default function Home(props) {
                 <h3>Design og fremstilling af Hardwareløsninger</h3>
             </div>
             <hr />
-            <h1>
-                Jeg søger Praktikplads
-            </h1>
-            <h2>
-                Jeg søger lige nu (siden 23-03-2021) praktikplads, som Datatekniker med<br/>
-                speciale i programmering. Det gør jeg, fordi jeg lige nu er under uddannelse<br/>
-                i EUX på Mercantec Gymnasium i Viborg, som Datatekniker.<br/>
-                Hvis du som firma søger en Datateknikerlærling med<br/>
-                speciale i programmering, så er du meget velkommen
-                til at kontakte mig. <br/>
-                Se siden <span tabIndex="0" className="InlineLink" onClick={() => {props.setPage('/contact')}} onKeyUp={(event) => {if(event.key === 'Enter') event.target.click();}}>Kontakt</span>, for mere information.
-            </h2>
-            <br/><br/>
         </div>
     );
 }
